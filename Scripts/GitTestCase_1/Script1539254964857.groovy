@@ -17,6 +17,10 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://www.startpage.com')
 
+WebUI.getWindowTitle()
+
+assert WebUI.getWindowTitle() == 'StartPage Search Engine'
+
 WebUI.delay(4)
 
 WebUI.closeBrowser()
