@@ -11,12 +11,11 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.thoughtworks.selenium.webdriven.commands.Click as Click
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://leden.nvm.nl')
+WebUI.navigateToUrl('https://stamkaart.nvm.nl')
 
 WebUI.delay(4)
 
@@ -38,14 +37,12 @@ WebUI.delay(4)
 
 WebUI.getWindowTitle()
 
-assert WebUI.getWindowTitle() == 'Home'
+assert WebUI.getWindowTitle() == 'NVM Stamkaart - Business'
 
-WebUI.click(findTestObject('Object Repository/NVM inlog LEDEN/Page_Home/a_Log uit'))
+WebUI.click(findTestObject('Object Repository/NVM inlog STAMKAART/Page_NVM Stamkaart - Business/button_Uitgebreid zoeken_btnLo'))
 
 WebUI.getWindowTitle()
 
-assert WebUI.getWindowTitle() == 'NVM'
+assert WebUI.getWindowTitle() == 'NVM Stamkaart'
 
 WebUI.closeBrowser()
-
-

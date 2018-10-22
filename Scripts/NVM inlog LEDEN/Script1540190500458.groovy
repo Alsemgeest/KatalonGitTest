@@ -11,7 +11,6 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.thoughtworks.selenium.webdriven.commands.Click as Click
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
@@ -47,5 +46,3 @@ WebUI.getWindowTitle()
 assert WebUI.getWindowTitle() == 'NVM'
 
 WebUI.closeBrowser()
-
-
